@@ -1,0 +1,51 @@
+:root{
+    --main: #93C6D6;
+    --sec: #8aa29e;
+    --ter: #668586;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+}
+img.portrait{
+    max-width: 10%;
+    max-height: 10%;
+}
+h2{
+    
+    font-size:  36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size: 100%;
+}
+a{
+    color: var(--ter);
+}
+
+footer{
+    text-align: center;
+}
+.icon{
+    display: inline-block;
+    width: 10%;
+    height: 10%;
+    overflow: hidden;
+}
+
+/* Navigation */
+nav ul{
+    float: right;
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    transition: 0.7s all;
+}
+nav ul li:hover{
+    background-color:#088;
+}
