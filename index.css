@@ -2,6 +2,11 @@
     --main: #93C6D6;
     --sec: #8aa29e;
     --ter: #668586;
+    background-color: #1A1A1B;
+    color:white;
+}
+body{
+    font-size: 100%;
 }
 
 *{
@@ -13,17 +18,21 @@ img.portrait{
     max-height: 10%;
 }
 h2{
-    
-    font-size:  36px;
+    font-size:  2em;
     text-transform: uppercase;
     text-align: center;
 }
-p{
-    text-align: center;
-    font-size: 100%;
-}
+
 a{
     color: var(--ter);
+}
+.bodyp{
+    margin: auto;
+    width: 75%;
+    background-color: black;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
 }
 
 footer{
@@ -31,21 +40,29 @@ footer{
 }
 .icon{
     display: inline-block;
-    width: 10%;
-    height: 10%;
+    width: 2%;
+    height: 2%;
     overflow: hidden;
+    /* fill: #212121; */
+    fill: white;
 }
 
 /* Navigation */
+
 nav ul{
     float: right;
-    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
 }
 nav ul li{
     display: inline-block;
-    list-style-type: none;
-    transition: 0.7s all;
+    text-align: center;
+    padding: 14px, 16px;
+    text-decoration: none;
+    /* transition: 0.7s all; */
 }
 nav ul li:hover{
-    background-color:#088;
+    background-color:white;
 }
