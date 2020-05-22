@@ -5,64 +5,38 @@
     background-color: #1A1A1B;
     color:white;
 }
-body{
-    font-size: 100%;
-}
-
 *{
     font-family: 'Nunito', sans-serif;
     text-decoration: none;
-}
-img.portrait{
-    max-width: 10%;
-    max-height: 10%;
-}
-h2{
-    font-size:  2em;
-    text-transform: uppercase;
-    text-align: center;
+    padding: .1em;
 }
 
-a{
+body{
+    font-size: 110%;
+    
+}
+
+body h2{
+    display: flex;
+    justify-content: center;
+}
+
+body a{
     color: var(--ter);
 }
-.bodyp{
-    margin: auto;
-    width: 75%;
-    background-color: black;
-    display: inline-block;
-    align-content: center;
-    text-align: center;
-}
 
-footer{
-    text-align: center;
+nav a{
+    color: var(--sec);
+}
+nav ul{
+    list-style-type: none;
+    text-align: right;
 }
 .icon{
-    display: inline-block;
-    width: 2%;
-    height: 2%;
-    overflow: hidden;
-    /* fill: #212121; */
-    fill: white;
-}
-
-/* Navigation */
-
-nav ul{
-    float: right;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-size: 1.5em;
-}
-nav ul li{
-    display: inline-block;
-    text-align: center;
-    padding: 14px, 16px;
-    text-decoration: none;
-    /* transition: 0.7s all; */
-}
-nav ul li:hover{
-    background-color:white;
+    display: inline-flex;
+    max-width: 100%;
+    max-height: 100%;
+    width: 2.5em;
+    height: 2.5em;
+    align-content: center;
 }

@@ -5,20 +5,39 @@
     background-color: #1A1A1B;
     color:white;
 }
-body{
-    font-size: 110%;
-}
 *{
     font-family: 'Nunito', sans-serif;
     text-decoration: none;
+    padding: .1em;
+}
+body{
+    font-size: 110%;
+}
+
+nav a{
+    color: var(--sec);
+}
+nav ul{
+    list-style-type: none;
+    text-align: right;
 }
 
 body a{
     color: var(--ter);
 }
+
 body h1{
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
+
 body ul{
     list-style-type: none;
+    padding: .25em;
 }
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
