@@ -1,42 +1,4 @@
-:root{
-    --main: #93C6D6;
-    --sec: #8aa29e;
-    --ter: #668586;
-    background-color: #1A1A1B;
-    color:white;
-}
-*{
-    font-family: 'Nunito', sans-serif;
-    text-decoration: none;
-    padding: .1em;
-}
-
-body{
-    font-size: 110%;
-    
-}
-
 body h2{
     display: flex;
     justify-content: center;
-}
-
-body a{
-    color: var(--ter);
-}
-
-nav a{
-    color: var(--sec);
-}
-nav ul{
-    list-style-type: none;
-    text-align: right;
-}
-.icon{
-    display: inline-flex;
-    max-width: 100%;
-    max-height: 100%;
-    width: 2.5em;
-    height: 2.5em;
-    align-content: center;
 }
