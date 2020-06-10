@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="resume.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
@@ -16,40 +17,33 @@
         <div class="w3-bar-block" style="padding: 0%;">
             <nav role="navigation" aria-label="main navigation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="resume.html">Résumé</a></li>
+                    <li><a href="index.html" onclick="return openTab(event,'home')">Home</a></li>
+                    <li><a href="resume.html" onclick="return openTab(event,'resume')">Résumé</a></li>
                     <li><a href="mailto:nicholasgorki@gmail.com">Contact</a></li>
                     <!-- <li><a href="https://www.w3schools.com/CSSref/css3_pr_box-sizing.asp">How to Fix This</a></li> -->
                 </ul>
-                <a href="https://www.github.com/ngorki">
-                    <span class="icon">
-                        <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="white"
-                                d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" />
-                        </svg>
-                    </span>
-                </a>
+
             </nav>
         </div>
-        <div class="w3-bar-block" style = "background-color: #1A1A1B;"></div>
-        <div class="main">
+        <div class="w3-bar-block " style="background-color: #1A1A1B;"></div>
+        <div class="main tab" id="resume">
             <h1>Work Experience</h1>
-            <h5><a href="https://ywcawpcw.org/">Camp Counselor</a> - YWCA White Plains</h5>
+            <h5><a href="https://ywcawpcw.org/">Camp Counselor - YWCA White Plains</a></h5>
             <ul>
                 <li>Summer 2018</li>
                 <li>Worked 35 hours a week with a large variety of children, ages 5-12</li>
             </ul>
 
             <hr><!-- Creates page break -->
-            <h1>Volunteer Experience</h1>
-
-            <h5><a href="https://ywcawpcw.org/">Counselor in Training</a> - YWCA White Plains</h5>
+            <h1>Volunteer Work</h1>
+            <!-- <a href="https://ywcawpcw.org/">Counselor in Training</a> -->
+            <h5><a href="https://ywcawpcw.org/">Counselor in Training - YWCA White Plains</a></h5>
             <ul class="sub">
                 <li>Summer 2017</li>
                 <li>Worked alongside other counselors to learn how to work with children.</li>
             </ul>
-            <h5><a href="http://bbhscommunityserviceclub.weebly.com/soup-kitchen.html">Local Soup Kitchen</a> - Port
-                Chester, NY</h5>
+            
+            <h5><a href = "http://bbhscommunityserviceclub.weebly.com/soup-kitchen.html">Local Soup Kitchen - Port Chester, NY</a></h5>
             <ul class="sub">
                 <li>November 2016 - May 2017</li>
                 <li>Served and prepared food for community members in need.</li>
@@ -78,7 +72,7 @@
             <ul>
                 <li>Varsity (2017-2020) and <a href="https://www.xtremecheerct.net">Allstar</a> (2019-2020) Cheerleading
                 </li>
-                <ul>
+                <ul style = "text-indent: 3em;">
                     <li>All League Cheerleader</li>
                     <li>High School Nationals Bid Recipient</li>
                     <li>UCA Allstar <a
@@ -88,6 +82,32 @@
                 <li>Yearbook Club (2013-2019)</li>
             </ul>
         </div>
+        <footer>
+            <div class="foot-icons">
+                <a href="https://www.github.com/ngorki">
+                    <span class="icon">
+                        <svg enable-background="new 0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="white"
+                                d="m12 .5c-6.63 0-12 5.28-12 11.792 0 5.211 3.438 9.63 8.205 11.188.6.111.82-.254.82-.567 0-.28-.01-1.022-.015-2.005-3.338.711-4.042-1.582-4.042-1.582-.546-1.361-1.335-1.725-1.335-1.725-1.087-.731.084-.716.084-.716 1.205.082 1.838 1.215 1.838 1.215 1.07 1.803 2.809 1.282 3.495.981.108-.763.417-1.282.76-1.577-2.665-.295-5.466-1.309-5.466-5.827 0-1.287.465-2.339 1.235-3.164-.135-.298-.54-1.497.105-3.121 0 0 1.005-.316 3.3 1.209.96-.262 1.98-.392 3-.398 1.02.006 2.04.136 3 .398 2.28-1.525 3.285-1.209 3.285-1.209.645 1.624.24 2.823.12 3.121.765.825 1.23 1.877 1.23 3.164 0 4.53-2.805 5.527-5.475 5.817.42.354.81 1.077.81 2.182 0 1.578-.015 2.846-.015 3.229 0 .309.21.678.825.56 4.801-1.548 8.236-5.97 8.236-11.173 0-6.512-5.373-11.792-12-11.792z" />
+                        </svg>
+                    </span>
+                </a>
+                <a href="mailto:nicholasgorki@gmail.com">
+                    <span class="icon">
+                        <img src="elements/mail.svg" alt="Email me at nicholasgorki@gmail.com!">
+                    </span>
+                </a>
+                <a href="https://www.instagram.com/nickgorki">
+                    <span class="icon">
+                        <img src="elements/instagram.svg" alt="Check out my instagram @nickgorki">
+                    </span>
+                </a>
+            </div>
+            <div style="color: #7c7a7a">Icons made by <a href="https://www.flaticon.com/authors/those-icons"
+                    title="Those Icons">Those Icons</a> and <a href="https://www.flaticon.com/authors/pixel-perfect"
+                    title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/"
+                    title="Flaticon">www.flaticon.com</a></div>
+        </footer>
     </div>
 </body>
 
